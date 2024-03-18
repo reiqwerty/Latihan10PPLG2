@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Latihan10PPLG2</string>
+    <string-array name="pilihan_angka">
+        <item>Tambah</item>
+        <item>Kurang</item>
+        <item>Kali</item>
+        <item>Bagi</item>
+    </string-array>
 </resources>
