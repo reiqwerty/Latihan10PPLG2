@@ -35,7 +35,7 @@ public class BottomNav extends AppCompatActivity {
                     loadFragment(new HomeFragment(), false);
                 } else if (itemId == R.id.navNotif) {
                     loadFragment(new NotificationsFragment(), false);
-                } else if (itemId == R.id.navProfile) {
+                } else if (itemId == R.id.navSettings) {
                     loadFragment(new SettingsFragment(), false);
                 } else {
                     loadFragment(new ProfileFragment(), false);

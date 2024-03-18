@@ -8,6 +8,7 @@ import android.view.View;
 public class Menu extends AppCompatActivity {
     CardView calculatorCard;
     CardView rvCard;
+    CardView btmnavbarcard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +16,7 @@ public class Menu extends AppCompatActivity {
 
         calculatorCard = findViewById(R.id.calculatorCard);
         rvCard = findViewById(R.id.rvCard);
+        btmnavbarcard = findViewById(R.id.btmnavbarCard);
 
         calculatorCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +30,13 @@ public class Menu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent rvPage = new Intent(Menu.this, RecyclerMakanan.class);
                 startActivity(rvPage);
+            }
+        });
+        btmnavbarcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent btmnavbarPage = new Intent(Menu.this, BottomNav.class);
+                startActivity(btmnavbarPage);
             }
         });
     }
